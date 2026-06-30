@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -8,11 +8,11 @@
     <title>503</title>
   </head>
   <body>
-    <header class="border-gray-100 bg-[#F9F9F9]">
-      <div class="mx-auto flex max-w-7xl items-center py-[6px]">
+    <header class="border-b border-gray-100 bg-[#F9F9F9]">
+      <div class="mx-auto flex max-w-7xl items-center px-6 py-[6px]">
         <select
           id="lang-select"
-          class="rounded-md border border-gray-200 bg-white px-1 py-1 text-sm font-medium text-ob-dark focus:outline-none focus:ring-2 focus:ring-ob-blue"
+          class="cursor-pointer rounded-md border border-gray-200 bg-white px-2 py-1 text-sm font-medium text-ob-dark focus:outline-none focus:ring-2 focus:ring-ob-blue"
         >
           <option value="ru">Русский</option>
           <option value="uz">O'zbekcha</option>
@@ -20,168 +20,173 @@
         </select>
       </div>
     </header>
+
     <main class="bg-white">
-      <div class="flex justify-center py-18">
+      <div class="flex justify-center pt-16 pb-10">
         <a href="#" class="flex flex-col items-center leading-none">
           <img src="/src/assets/images/logo.svg" alt="logo" />
         </a>
       </div>
-      <div class="pb-20 flex justify-center">
-        <img src="/src/assets/images/503.png" alt="503" />
+
+      <div class="flex justify-center pb-16 relative -mt-8 items-start">
+        <img
+          src="/src/assets/images/503.webp"
+          alt="503"
+          class="max-w-lg w-full px-4"
+        />
       </div>
-      <div class="mt-6 pb-24 text-center">
+
+      <div class="pb-24 text-center px-4">
         <h1 class="display-1-42-bold text-ob-dark" data-i18n="heading">
           Sayt qayta tiklanmoqda
         </h1>
-        <p
-          class="mt-4 text-lg font-bold text-[#ABABAB] sm:text-xl"
-          data-i18n="sub"
-        >
+        <p class="mt-3 text-xl font-semibold text-[#ABABAB]" data-i18n="sub">
           Сайт на реконструкции
         </p>
       </div>
     </main>
+
     <footer class="bg-[#F9F9F9]">
-      <div
-        class="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-16 md:grid-cols-2"
-      >
-        <div class="order-2 md:order-1 md:pl-10">
-          <div class="text-right md:text-right">
+      <div class="mx-auto grid max-w-7xl gap-6 px-6 pb-12 md:grid-cols-3">
+        <!-- Left: text + buttons -->
+        <div class="flex flex-col items-center self-center pt-10 md:items-end">
+          <div class="text-center md:text-right">
             <h2
-              class="text-2xl font-extrabold leading-snug sm:text-3xl"
+              class="text-[26px] font-extrabold leading-snug"
               data-i18n="footer_h1"
             >
               Возьми Bazar с собой!
             </h2>
             <p
-              class="text-2xl font-extrabold leading-snug sm:text-3xl"
+              class="text-[26px] font-extrabold leading-snug"
               data-i18n="footer_h2"
             >
               Удобное приложение для быстрого доступа ко всем товарам
             </p>
           </div>
-
-          <div class="mt-8 flex flex-wrap items-center justify-end gap-4">
-            <a href="#" class="flex items-center gap-3 rounded-xl">
+          <div
+            class="mt-6 flex flex-wrap items-center justify-center gap-3 md:justify-end"
+          >
+            <a href="#">
               <img
                 src="/src/assets/images/play-market-logo.png"
-                alt="google play"
+                alt="Google Play"
               />
             </a>
-            <a href="#" class="flex items-center gap-3 rounded-xl">
+            <a href="#">
               <img
                 src="/src/assets/images/app-store-logo.png"
-                alt="app store"
+                alt="App Store"
               />
             </a>
           </div>
         </div>
 
-        <div class="order-1 flex items-center justify-center gap-6 md:order-2">
-          <div class="relative -mt-8 flex items-start">
+        <!-- Center: phones -->
+        <div class="flex justify-center -mt-8">
+          <img src="/src/assets/images/phone.webp" alt="OpenBazar catalog" />
+        </div>
+
+        <!-- Right: QR -->
+        <div class="flex justify-center self-center pt-10 md:justify-start">
+          <div class="rounded-2xl bg-white p-4 shadow-md">
             <img
-              src="/src/assets/images/phone-dizayn1.png"
-              alt="OpenBazar app screen"
-              class="w-40 sm:w-48"
+              src="/src/assets/images/QR.png"
+              alt="QR code"
+              class="h-36 w-36"
             />
-            <img
-              src="/src/assets/images/phonedizayn2.png"
-              alt="OpenBazar app catalog screen"
-              class="relative z-10 -ml-10 mt-12 w-40 sm:w-48"
-            />
-          </div>
-          <div class="ml-6 rounded-xl bg-white p-3 shadow-md">
-            <img src="/src/assets/images/QR.png" alt="qr" class="h-32 w-32" />
           </div>
         </div>
       </div>
 
       <div>
         <div
-          class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-8 sm:flex-row"
+          class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-6 sm:flex-row"
         >
-          <div class="flex items-center gap-8 sm:items-start">
+          <div class="flex items-center gap-8">
             <img src="/src/assets/images/logo.svg" alt="logo" />
-            <p class="text-xs text-[#ABABAB]" data-i18n-html="copyright">
+            <p
+              class="text-xs leading-relaxed text-[#ABABAB]"
+              data-i18n-html="copyright"
+            >
               © 2022—2024 SmartBazar.<br />Все права защищены.
             </p>
           </div>
 
           <div
-            class="flex flex-col items-center gap-4 text-sm sm:flex-row sm:gap-10"
+            class="flex flex-col items-center gap-4 text-sm sm:flex-row sm:gap-8"
           >
-            <div class="text-center sm:text-left">
-              <p class="text-[#ABABAB]" data-i18n="short_number">
-                Короткий номер
-              </p>
-              <a
-                href="tel:1377"
-                class="flex items-center gap-2 font-bold text-ob-dark"
-              >
-                <img
-                  src="/src/assets/images/Phone.png"
-                  alt=""
-                  class="h-4 w-4"
-                />
-                1377</a
-              >
+            <div class="flex items-center gap-2 text-center sm:text-left">
+              <img src="/src/assets/images/Phone.png" alt="" />
+              <div class="flex flex-col items-center gap-1 sm:items-start">
+                <p class="text-xs text-[#ABABAB]" data-i18n="short_number">
+                  Короткий номер
+                </p>
+                <a
+                  href="tel:1377"
+                  class="flex items-center gap-1.5 font-bold text-ob-dark"
+                >
+                  1377
+                </a>
+              </div>
             </div>
-            <div class="text-center sm:text-left">
-              <p class="text-[#ABABAB]" data-i18n="head_office">
-                Головной офис
-              </p>
-              <a
-                href="tel:+78777771377"
-                class="flex items-center gap-2 font-bold text-ob-dark"
-              >
-                <img
-                  src="/src/assets/images/Phone.png"
-                  alt=""
-                  class="h-4 w-4"
-                />
-                78 777-13-77</a
-              >
+            <div class="flex items-center gap-2 text-center sm:text-left">
+              <img src="/src/assets/images/Phone.png" alt="" />
+              <div class="flex flex-col items-center gap-1 sm:items-start">
+                <p class="text-xs text-[#ABABAB]" data-i18n="head_office">
+                  Головной офис
+                </p>
+                <a
+                  href="tel:+78777771377"
+                  class="flex items-center gap-1.5 font-bold text-ob-dark"
+                >
+                  78 777-13-77
+                </a>
+              </div>
             </div>
-            <div class="text-center sm:text-left">
-              <p class="text-[#ABABAB]" data-i18n="email_label">
-                Электронная почта
-              </p>
-              <a
-                href="mailto:office@smartbank.uz"
-                class="flex items-center gap-2 font-bold text-ob-dark"
-              >
-                <img src="/src/assets/images/sms.png" alt="" class="h-4 w-4" />
-                office@smartbank.uz</a
-              >
+            <div class="flex items-center gap-2 text-center sm:text-left">
+              <img src="/src/assets/images/email.png" alt="email" />
+              <div class="flex flex-col items-center gap-1 sm:items-start">
+                <p class="text-xs text-[#ABABAB]" data-i18n="email_label">
+                  Электронная почта
+                </p>
+                <a
+                  href="mailto:office@smartbank.uz"
+                  class="flex items-center gap-1.5 font-bold text-ob-dark"
+                >
+                  office@smartbank.uz
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="flex items-center gap-7">
+          <div class="flex items-center gap-5">
             <a href="#" aria-label="telegram">
               <img
                 src="/src/assets/images/telegram.svg"
                 alt="telegram"
-                class="h-4 w-4"
+                class="h-5 w-5"
               />
             </a>
             <a href="#" aria-label="facebook">
               <img
                 src="/src/assets/images/facebook.svg"
                 alt="facebook"
-                class="h-4 w-4"
+                class="h-5 w-5"
               />
             </a>
             <a href="#" aria-label="instagram">
               <img
                 src="/src/assets/images/instagram.svg"
                 alt="instagram"
-                class="h-4 w-4"
+                class="h-5 w-5"
               />
             </a>
           </div>
         </div>
       </div>
     </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
