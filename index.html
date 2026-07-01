@@ -8,11 +8,11 @@
     <title>503</title>
   </head>
   <body>
-    <header class="border-b border-gray-100 bg-[#F9F9F9]">
+    <header class="bg-[#F9F9F9]">
       <div class="mx-auto flex max-w-7xl items-center px-6 py-[6px]">
         <select
           id="lang-select"
-          class="cursor-pointer rounded-md border border-gray-200 bg-white px-2 py-1 text-sm font-medium text-ob-dark focus:outline-none focus:ring-2 focus:ring-ob-blue"
+          class="cursor-pointer rounded-md border-none bg-transparent px-2 py-1 text-sm font-medium text-ob-dark focus:outline-none focus:ring-2 focus:ring-ob-blue"
         >
           <option value="ru">Русский</option>
           <option value="uz">O'zbekcha</option>
@@ -46,9 +46,10 @@
       </div>
     </main>
 
-    <footer class="bg-[#F9F9F9]">
-      <div class="mx-auto grid max-w-7xl gap-6 px-6 pb-12 md:grid-cols-3">
-        <!-- Left: text + buttons -->
+    <footer class="bg-[#EFEFEF]">
+      <div
+        class="mx-auto max-w-[1000px] grid items-center justify-between gap-8 px-6 pb-12 md:grid-cols-[auto_auto_auto]"
+      >
         <div class="flex flex-col items-center self-center pt-10 md:items-end">
           <div class="text-center md:text-right">
             <h2
@@ -82,20 +83,20 @@
           </div>
         </div>
 
-        <!-- Center: phones -->
-        <div class="flex justify-center -mt-8">
-          <img src="/src/assets/images/phone.webp" alt="OpenBazar catalog" />
+        <div class="-mt-14">
+          <img
+            class="w-[240px] h-[380px] object-contain"
+            src="/src/assets/images/phone.webp "
+            alt="OpenBazar catalog"
+          />
         </div>
 
-        <!-- Right: QR -->
-        <div class="flex justify-center self-center pt-10 md:justify-start">
-          <div class="rounded-2xl bg-white p-4 shadow-md">
-            <img
-              src="/src/assets/images/QR.png"
-              alt="QR code"
-              class="h-36 w-36"
-            />
-          </div>
+        <div class="pt-10">
+          <img
+            src="/src/assets/images/QR.png"
+            alt="QR code"
+            class="h-36 w-36"
+          />
         </div>
       </div>
 
@@ -116,7 +117,7 @@
           <div
             class="flex flex-col items-center gap-4 text-sm sm:flex-row sm:gap-8"
           >
-            <div class="flex items-center gap-2 text-center sm:text-left">
+            <div class="flex items-end gap-2 text-center sm:text-left">
               <img src="/src/assets/images/Phone.png" alt="" />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p class="text-xs text-[#ABABAB]" data-i18n="short_number">
@@ -130,7 +131,7 @@
                 </a>
               </div>
             </div>
-            <div class="flex items-center gap-2 text-center sm:text-left">
+            <div class="flex items-end gap-2 text-center sm:text-left">
               <img src="/src/assets/images/Phone.png" alt="" />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p class="text-xs text-[#ABABAB]" data-i18n="head_office">
@@ -144,7 +145,7 @@
                 </a>
               </div>
             </div>
-            <div class="flex items-center gap-2 text-center sm:text-left">
+            <div class="flex items-end gap-2 text-center sm:text-left">
               <img src="/src/assets/images/email.png" alt="email" />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p class="text-xs text-[#ABABAB]" data-i18n="email_label">
@@ -162,25 +163,13 @@
 
           <div class="flex items-center gap-5">
             <a href="#" aria-label="telegram">
-              <img
-                src="/src/assets/images/telegram.svg"
-                alt="telegram"
-                class="h-5 w-5"
-              />
+              <img src="/src/assets/images/telegram.svg" alt="telegram" />
             </a>
             <a href="#" aria-label="facebook">
-              <img
-                src="/src/assets/images/facebook.svg"
-                alt="facebook"
-                class="h-5 w-5"
-              />
+              <img src="/src/assets/images/facebook.svg" alt="facebook" />
             </a>
             <a href="#" aria-label="instagram">
-              <img
-                src="/src/assets/images/instagram.svg"
-                alt="instagram"
-                class="h-5 w-5"
-              />
+              <img src="/src/assets/images/instagram.svg" alt="instagram" />
             </a>
           </div>
         </div>
