@@ -8,11 +8,11 @@
     <title>503</title>
   </head>
   <body>
-    <header class="bg-surface">
-      <div class="mx-auto flex max-w-7xl items-center px-6 py-[6px]">
+    <header class="bg-light-gray">
+      <div class="container flex items-center py-1.5">
         <select
           id="lang-select"
-          class="cursor-pointer rounded-md border-none bg-transparent px-2 py-1 text-sm font-medium text-ob-dark focus:outline-none focus:ring-2 focus:ring-ob-blue"
+          class="cursor-pointer rounded-md border-none bg-transparent px-2 py-1 text-display-3"
         >
           <option value="ru">Русский</option>
           <option value="uz">O'zbekcha</option>
@@ -22,34 +22,31 @@
     </header>
 
     <main class="bg-white">
-      <div class="flex justify-center flex-col items-center pt-18 pb-36">
+      <div class="flex justify-center flex-col items-center mt-18 mb-36">
         <a href="#" class="flex flex-col items-center leading-none">
           <img src="/src/assets/images/logo.svg" alt="logo" />
         </a>
         <img
           src="/src/assets/images/503.webp"
           alt="503"
-          class="max-w-lg w-full pt-18 pb-22.5"
+          class="max-w-lg w-full mt-18 mb-22.5"
         />
         <div class="text-center">
-          <h1 class="text-display-1 text-ob-dark" data-i18n="heading">
+          <h1 class="text-display-1" data-i18n="heading">
             Sayt qayta tiklanmoqda
           </h1>
-          <p
-            class="text-title-1 pt-4 text-xl font-semibold text-[#ABABAB]"
-            data-i18n="sub"
-          >
+          <p class="text-title-1 mt-4 text-dark-gray" data-i18n="sub">
             Сайт на реконструкции
           </p>
         </div>
       </div>
     </main>
 
-    <footer class="bg-footer-surface">
+    <footer class="bg-medium-gray">
       <div
-        class="mx-auto max-w-[1000px] grid items-center justify-between gap-20 md:grid-cols-[auto_auto_auto]"
+        class="mx-auto max-w-250 grid items-center justify-between gap-20 md:grid-cols-[auto_auto_auto]"
       >
-        <div class="flex flex-col items-center self-center pt-10 md:items-end">
+        <div class="flex flex-col items-center self-center mt-10 md:items-end">
           <div class="text-center md:text-right">
             <h2 class="text-title-1 leading-snug" data-i18n="footer_h1">
               Возьми Bazar с собой!
@@ -63,13 +60,13 @@
           >
             <a href="#">
               <img
-                src="/src/assets/images/play-market-logo.png"
+                src="/src/assets/images/google-play-logo.svg"
                 alt="Google Play"
               />
             </a>
             <a href="#">
               <img
-                src="/src/assets/images/app-store-logo.png"
+                src="/src/assets/images/app-store-logo.svg"
                 alt="App Store"
               />
             </a>
@@ -78,13 +75,13 @@
 
         <div class="-mt-14">
           <img
-            class="w-[240px] h-[380px] object-contain"
-            src="/src/assets/images/phone.webp "
+            class="w-60 h-95 object-contain"
+            src="/src/assets/images/phone.webp"
             alt="OpenBazar catalog"
           />
         </div>
 
-        <div class="pt-10">
+        <div class="mt-10">
           <img
             src="/src/assets/images/QR.png"
             alt="QR code"
@@ -94,14 +91,11 @@
       </div>
 
       <div
-        class="mx-auto flex max-w-7xl flex-col items-center justify-center gap-17.5 py-18 sm:flex-row"
+        class="container flex flex-col items-center justify-center gap-17.5 pt-18 pb-18 sm:flex-row"
       >
         <div class="flex items-center gap-8">
           <img src="/src/assets/images/logo.svg" alt="logo" />
-          <p
-            class="text-body-2 leading-relaxed text-footer-text"
-            data-i18n-html="copyright"
-          >
+          <p class="text-body2 text-dark-gray">
             © 2022—2024 SmartBazar.<br />Все права защищены.
           </p>
         </div>
@@ -110,10 +104,10 @@
             class="flex flex-col items-center gap-4 text-sm sm:flex-row sm:gap-8"
           >
             <div class="flex items-end gap-2 text-center sm:text-left">
-              <img src="/src/assets/images/Phone.svg" alt="" />
+              <img src="/src/assets/images/Phone.svg" class="w-5 h-5" alt="" />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p
-                  class="text-caption-1 text-footer-text"
+                  class="text-caption-1 text-dark-gray"
                   data-i18n="short_number"
                 >
                   Короткий номер
@@ -127,10 +121,10 @@
               </div>
             </div>
             <div class="flex items-end gap-2 text-center sm:text-left">
-              <img src="/src/assets/images/Phone.svg" alt="" />
+              <img src="/src/assets/images/Phone.svg" class="w-5 h-5" alt="" />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p
-                  class="text-caption-1 text-[#ABABAB]"
+                  class="text-caption-1 text-dark-gray"
                   data-i18n="head_office"
                 >
                   Головной офис
@@ -144,10 +138,14 @@
               </div>
             </div>
             <div class="flex items-end gap-2 text-center sm:text-left">
-              <img src="/src/assets/images/email.svg" alt="email" />
+              <img
+                src="/src/assets/images/email.svg"
+                class="w-5 h-5"
+                alt="email"
+              />
               <div class="flex flex-col items-center gap-1 sm:items-start">
                 <p
-                  class="text-caption-1 text-footer-text"
+                  class="text-caption-1 text-dark-gray"
                   data-i18n="email_label"
                 >
                   Электронная почта
@@ -164,13 +162,25 @@
 
           <div class="flex items-center gap-5">
             <a href="#" aria-label="telegram">
-              <img src="/src/assets/images/telegram.svg" alt="telegram" />
+              <img
+                class="w-5 h-5"
+                src="/src/assets/images/telegram.svg"
+                alt="telegram"
+              />
             </a>
             <a href="#" aria-label="facebook">
-              <img src="/src/assets/images/facebook.svg" alt="facebook" />
+              <img
+                class="w-5 h-5"
+                src="/src/assets/images/facebook.svg"
+                alt="facebook"
+              />
             </a>
             <a href="#" aria-label="instagram">
-              <img src="/src/assets/images/instagram.svg" alt="instagram" />
+              <img
+                class="w-5 h-5"
+                src="/src/assets/images/instagram.svg"
+                alt="instagram"
+              />
             </a>
           </div>
         </div>
