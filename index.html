@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/assets/style.css" />
     <title>503</title>
   </head>
   <body>
@@ -36,7 +36,7 @@
           />
           <div class="text-center">
             <h1 class="text-display-1" data-i18n="heading">
-              Sayt qayta tiklanmoqda
+              Сайт восстанавливается
             </h1>
             <p class="text-title-1 mt-4 text-dark-gray" data-i18n="sub">
               Сайт на реконструкции
@@ -48,7 +48,9 @@
 
     <footer class="bg-medium-gray">
       <div class="container">
-        <div class="flex items-center justify-center gap-20">
+        <div
+          class="flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20"
+        >
           <div
             class="flex flex-col items-center gap-6 self-center md:items-end"
           >
@@ -78,15 +80,15 @@
             </div>
           </div>
 
-          <div class="-mt-14">
+          <div class="lg:-mt-14">
             <img
-              class="w-60 h-95 object-contain"
+              class="w-60 h-95 max-w-full object-contain"
               src="/src/assets/images/phone.webp"
               alt="OpenBazar catalog"
             />
           </div>
 
-          <div class="mt-10">
+          <div class="lg:mt-10">
             <img
               src="/src/assets/images/QR.png"
               alt="QR code"
@@ -97,7 +99,7 @@
       </div>
 
       <div
-        class="container flex flex-col items-center justify-center gap-17.5 pt-18 pb-18 sm:flex-row"
+        class="container flex flex-col items-center justify-center gap-17.5 py-18 sm:flex-row"
       >
         <div class="flex items-center gap-8">
           <img src="/src/assets/images/logo.svg" alt="logo" />
