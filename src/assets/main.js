@@ -1,4 +1,4 @@
-import translations from "./assets/i18n/translations.json";
+import translations from "./i18n/translations.json";
 
 const STORAGE_KEY = "smartbazar-lang";
 const DEFAULT_LANG = "ru";
